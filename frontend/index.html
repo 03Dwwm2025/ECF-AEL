@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEL — Auto-École</title>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <aside id="nav" class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-logo">AEL</span>
+        <span class="brand-text">
+          Auto-École
+          <small>Gestion d'agence</small>
+        </span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="/eleves"     data-link><i class="bi bi-people"></i>            <span>Élèves</span></a>
+        <a href="/moniteurs"  data-link><i class="bi bi-person-badge"></i>      <span>Moniteurs</span></a>
+        <a href="/vehicules"  data-link><i class="bi bi-car-front"></i>         <span>Véhicules</span></a>
+        <a href="/modeles"    data-link><i class="bi bi-card-list"></i>         <span>Modèles</span></a>
+        <a href="/lecons"     data-link><i class="bi bi-journal-check"></i>     <span>Leçons</span></a>
+        <a href="/calendrier" data-link><i class="bi bi-calendar-week"></i>     <span>Calendrier</span></a>
+        <a href="/users"      data-link><i class="bi bi-gear"></i>              <span>Utilisateurs</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="btn-logout"><i class="bi bi-box-arrow-right"></i> <span>Déconnexion</span></button>
+      </div>
+    </aside>
+
+    <div class="main">
+
+      <header class="topbar">
+        <nav class="breadcrumb-area" id="breadcrumb" aria-label="Fil d'ariane">
+          <span>Gestion</span>
+          <i class="bi bi-chevron-right"></i>
+          <span class="current">Accueil</span>
+        </nav>
+
+        <div class="topbar-actions">
+          <label class="search-box">
+            <i class="bi bi-search"></i>
+            <input type="search" placeholder="Rechercher un élève, un moniteur…" />
+          </label>
+          <span class="date-chip">
+            <i class="bi bi-calendar3"></i>
+            <span id="topbar-date"></span>
+          </span>
+        </div>
+      </header>
+
+      <main id="app" class="content"></main>
+
+    </div>
+  </div>
+
+  <script src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="/js/shell.js"></script>
+  <script type="module" src="/js/router.js"></script>
+</body>
+</html>
