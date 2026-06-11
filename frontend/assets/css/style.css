@@ -118,6 +118,19 @@ body {
   border-top: 1px solid var(--line);
 }
 
+.sidebar-legal {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .5rem .75rem;
+  border-radius: 8px;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: .82rem;
+  transition: background .15s, color .15s;
+}
+.sidebar-legal:hover { background: #f1f5f9; color: var(--ink); }
+
 #btn-logout {
   width: 100%;
   display: flex;
@@ -225,8 +238,10 @@ body {
   :root { --sidebar-w: 64px; }
   .brand-text,
   .sidebar-nav a[data-link] span,
+  .sidebar-legal span,
   #btn-logout span { display: none; }
   .sidebar-nav a[data-link],
+  .sidebar-legal,
   #btn-logout { justify-content: center; }
   .search-box { width: 180px; }
 }
@@ -414,6 +429,75 @@ body {
 /* ---- Login responsive : panneau de marque masqué ---------- */
 @media (max-width: 780px) {
   .auth-brand { display: none; }
+}
+
+/* Lien légal dans le pied du formulaire de login */
+.auth-legal { margin-top: .5rem; text-align: center; }
+.auth-legal a { color: var(--muted); font-size: .78rem; text-decoration: none; }
+.auth-legal a:hover { color: var(--brand-dark); text-decoration: underline; }
+
+/* ============================================================
+   PAGE LÉGALE (mentions légales + confidentialité) — autonome
+   ============================================================ */
+.legal-body { background: var(--bg); }
+.legal-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+.legal-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+.legal-head h1 { font-size: 1.6rem; font-weight: 700; margin: 0; }
+.legal-updated { color: var(--muted); font-size: .85rem; margin: .2rem 0 0; }
+
+.legal-toc {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: .9rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+.legal-toc a {
+  color: var(--brand-dark);
+  font-weight: 600;
+  font-size: .9rem;
+  text-decoration: none;
+}
+.legal-toc a:hover { text-decoration: underline; }
+
+.legal-section {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.25rem;
+}
+.legal-section h2 { font-size: 1.3rem; font-weight: 700; margin: 0 0 1rem; }
+.legal-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.4rem 0 .5rem;
+  color: var(--ink);
+}
+.legal-section p { line-height: 1.6; color: #334155; margin: 0 0 .75rem; }
+.legal-section ul { margin: 0 0 .9rem; padding-left: 1.25rem; line-height: 1.7; color: #334155; }
+.legal-section a { color: var(--brand-dark); }
+
+/* Champs à compléter par l'auto-école — bien visibles */
+.todo {
+  background: #fef9c3;
+  border: 1px dashed #d4a72c;
+  border-radius: 4px;
+  padding: 0 .35rem;
+  color: #854d0e;
+  font-size: .9em;
 }
 
 /* ============================================================

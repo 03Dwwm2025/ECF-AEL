@@ -63,6 +63,7 @@ export function render(container) {
           </form>
 
           <p class="auth-foot"><i class="bi bi-shield-lock"></i> Connexion sécurisée · Agence centrale</p>
+          <p class="auth-legal"><a href="/mentions-legales.html">Mentions légales &amp; confidentialité</a></p>
         </div>
       </main>
     </div>
