@@ -7,6 +7,13 @@ Première version d'une application de gestion pour l'Auto Ecole du Lycée :
 - Page de connexion avec token JWT (Json Web Token) généré à la connexion et stocké en local storage
 - Présence d'une page (accessible sans avoir besoin d'être connecté) Mentions légales et Politique de confidentialité
 
+## Documents
+
+- USE CASE bas niveau Prise de leçon de conduite + redaction du USE CASE.
+- Diagramme de séquence de ce même USE CASE.
+- Maquette de l'application (zooning global + wireframe/mockup pour chaque page de l'application) - Réalisée à l'aide d'une IA.
+- Script SQL pour la base de données du projet 
+
 ## Stack technique
 
 - Backend = Node.js, Express 5, SQL Server ainsi que les packages jsonwebtoken, bcrypt et express-validator
