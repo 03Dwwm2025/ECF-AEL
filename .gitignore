@@ -27,3 +27,6 @@ Thumbs.db
 coverage/
 dist/
 build/
+
+# Mémo perso (contient l'IP du VPS / commandes SSH) — ne pas versionner
+MEMO-DEV.md
